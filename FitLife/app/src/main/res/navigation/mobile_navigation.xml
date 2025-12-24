@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fitlife.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_searchProduct"
+        android:name="com.example.fitlife.ui.searchproduct.SearchProductFragment"
+        android:label="@string/searchproduct"
+        tools:layout="@layout/fragment_search_product" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.fitlife.ui.cart.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_tracking"
+        android:name="com.example.fitlife.ui.tracking.TrackingFragment"
+        android:label="@string/steptracking"
+        tools:layout="@layout/fragment_tracking" />
+
+    <fragment
+        android:id="@+id/nav_guide"
+        android:name="com.example.fitlife.ui.guide.GuideFragment"
+        android:label="@string/guide"
+        tools:layout="@layout/fragment_guide" />
+
+</navigation>

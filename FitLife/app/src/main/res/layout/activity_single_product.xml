@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleProductActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/box" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Add Quantity"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView32"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/addtocart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber3"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
